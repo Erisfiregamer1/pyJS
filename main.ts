@@ -1,4 +1,4 @@
-import { loadPyodide } from "npm:pyodide"
+import { loadPyodide } from "npm:pyodide@0.25.0"
 
 export class PythonEnvironment {
     pyodide: ReturnType<Awaited<typeof loadPyodide>>
