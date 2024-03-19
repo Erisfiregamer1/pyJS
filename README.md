@@ -1,6 +1,12 @@
 # pyJS
 A small python to JS abstraction layer. Intended for use on JSR.
 
+### Example
 
-## How to use
-Initialize with `new PythonInterpreter` (import PythonInterpreter from the JSR package, @erisws/pyJS). From there, you can either use `PythonInterpreter.run()` (to keep one consistent environment) or `PythonInterpreter.runOneOff()` to run the code in it's own env, seperate from the main interpreter.
+```javascript
+import { PythonEnvironment } from "@erisws/pyjs";
+
+const python = new PythonEnvironment
+
+const output = python.run("1+1") // 2
+```
